@@ -31,7 +31,7 @@ fars_read <- function(filename) {
                 readr::read_csv(filename, progress = FALSE)
         })
         dplyr::tbl_df(data)
-}
+  }
 
 #' make_filename
 #'
@@ -82,7 +82,7 @@ fars_read_years <- function(years) {
                         return(NULL)
                 })
         })
-}
+  }
 
 #' fars_summarize_years
 #'
@@ -107,7 +107,7 @@ fars_summarize_years <- function(years) {
                 dplyr::group_by(year, MONTH) %>%
                 dplyr::summarize(n = n()) %>%
                 tidyr::spread(year, n)
-}
+  }
 
 #' fars_map_state
 #'
@@ -148,4 +148,4 @@ fars_map_state <- function(state.num, year) {
                           xlim = range(LONGITUD, na.rm = TRUE))
                 graphics::points(LONGITUD, LATITUDE, pch = 46)
         })
-}
+  }
