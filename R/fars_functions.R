@@ -21,7 +21,8 @@
 #' @examples
 #' fars_read("accident_2013.csv.bz2")
 #'
-#' @import dplyr
+#' @importFrom tibble as_tibble
+#' @importFrom readr read_csv
 #'
 #' @export
 fars_read <- function(filename) {
@@ -30,7 +31,7 @@ fars_read <- function(filename) {
         data <- suppressMessages({
                 readr::read_csv(filename, progress = FALSE)
         })
-        dplyr::tbl_df(data)
+        tibble::as_tibble(data)
   }
 
 #' make_filename
@@ -65,9 +66,11 @@ make_filename <- function(year) {
 #' @return A data set covering the indicated years, loaded into the R environment.
 #'
 #' @examples
-#' fars_read_years(2013, 2014, 2015)
+#' fars_read_years(c(2013, 2014, 2015))
 #'
-#' @import dplyr
+#' @import magrittr
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -98,7 +101,11 @@ fars_read_years <- function(years) {
 #' @examples
 #' fars_summarize_years(c(2014, 2015))
 #'
-#' @import dplyr
+#' @import magrittr
+#' @importFrom dplyr bind_rows
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarize
+#' @importFrom tidyr spread
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -116,6 +123,7 @@ fars_summarize_years <- function(years) {
 #'
 #' @param state.num An integer the provides the number of the state whose data
 #' is to be retrieved.  See (link) for a listing of state numbers.
+#'
 #' @param year An integer which contains the year of interest.
 #'
 #' @return A plot with accident locations plotted on a map of the selected state.
@@ -123,10 +131,9 @@ fars_summarize_years <- function(years) {
 #' @examples
 #' fars_map_state(25, 2013)
 #'
-#' @references \href {https://www.nhtsa.gov/nhtsa-ftp?fid=1191#block-nhtsa-page-title}
-#' {Consult the FARS documentation from the NHTSA website.}
-#'
-#' @import dplyr maps graphics
+#' @importFrom dplyr filter
+#' @importFrom maps map
+#' @importFrom graphics points
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

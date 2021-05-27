@@ -21,9 +21,5 @@ If the state.num is invalid, the function shows an error.
 }
 \examples{
 fars_map_state(25, 2013)
-
-}
-\references{
-\href {https://www.nhtsa.gov/nhtsa-ftp?fid=1191#block-nhtsa-page-title}
-{Consult the FARS documentation from the NHTSA website.}
+#'
 }
