@@ -4,10 +4,10 @@
 \alias{fars_map_state}
 \title{fars_map_state}
 \usage{
-fars_map_state(state.num, year)
+fars_map_state(state_num, year)
 }
 \arguments{
-\item{state.num}{An integer the provides the number of the state whose data
+\item{state_num}{An integer the provides the number of the state whose data
 is to be retrieved.  See (link) for a listing of state numbers.}
 
 \item{year}{An integer which contains the year of interest.}
@@ -17,9 +17,10 @@ A plot with accident locations plotted on a map of the selected state.
 }
 \description{
 Displays a plot with a state map including the accidents location by year
-If the state.num is invalid, the function shows an error.
+If the state_num parameter is invalid, the function shows an error.  Example
+data is only available for the years 2013 - 2015.
 }
 \examples{
-fars_map_state(25, 2013)
-#'
+fars_map_state(28, 2013)
+
 }

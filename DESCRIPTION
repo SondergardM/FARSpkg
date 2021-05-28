@@ -22,6 +22,8 @@ Imports:
     dplyr,
     maps,
     readr,
-    tidyr
+    tidyr,
+    magrittr,
+    tibble
     
     

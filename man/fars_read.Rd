@@ -7,23 +7,27 @@
 fars_read(filename)
 }
 \arguments{
-\item{filename}{The name of a file containing the annual data for a specific
-year of the survey. The file is assumed to be in comma separated values (csv)
-format.}
+\item{filename}{A character vector denoting a file containing the annual data
+for a specific year of the survey. The file is assumed to be in comma
+separated values (csv) format.}
 }
 \value{
-This function returns the data contained in the file as a tibble.  A
-tibble is a special version of a data frame designed to work with the "tidyverse"
-set of R packages.  If the file cannot be found, an error message "file ...
-does not exist" is generated.
+A data frame (tibble) containing the FARS data.  A tibble is a special
+version of a data frame designed to work with the "tidyverse" set of R packages.
+If the file cannot be found, an error message "file ... does not exist" is
+generated.
 }
 \description{
 This is a function that reads in This function reads data from .csv file
-from the US ational Highway Traffic Safety Administration's Fatality Analysis
+from the US National Highway Traffic Safety Administration's Fatality Analysis
 Reporting System (FARS), which is a nationwide census that provides yearly data
 regarding fatal injuries suffered in motor vehicle traffic crashes.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
+\dontrun{
+df <- fars_read("accident_2013.csv.bz2")
+print(class(df))
+head(df)
+}
 
 }

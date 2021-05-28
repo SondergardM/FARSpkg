@@ -7,10 +7,10 @@
 make_filename(year)
 }
 \arguments{
-\item{year}{The year for which the data was collected.}
+\item{year}{A numeric or integer denoting the year for which the data was collected.}
 }
 \value{
-The function returns a character vector (the filename) containing a
+The function returns a character vector (the file name) containing a
 combination of text and the year passed to the function.
 }
 \description{

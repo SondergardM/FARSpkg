@@ -7,11 +7,10 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{years}{A vector with a list of years to be summarized.}
+\item{years}{A numeric vector with a list of years to be summarized.}
 }
 \value{
-A data set summarizing accidents by year and month, with other relevant
-information.
+A data frame (tibble) summarizing accidents by year and month.
 }
 \description{
 This function summarizes accident data, by year and month, for the years input

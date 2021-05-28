@@ -1,5 +1,6 @@
-##
-
+#'
+## -----------------------------------------------------------------------------
+#'
 #'
 #' Data are from the US National Highway Traffic Safety Administration's Fatality
 #' Analysis Reporting System (FARS), which is a nationwide census providing the
@@ -9,10 +10,29 @@
 #'
 #' @source \url{https://www-fars.nhtsa.dot.gov/Main/index.aspx}
 #'
-#' @format A \strong{data frame} with columns:
-#' \describe{
-#'   \item {2013} {30202 observations of 50 variables}
-#'   \item {2014} {30056 observations of 50 variables}
-#'   \item {2015} {32166 observations of 50 variables}
-#'   \item {variables description}
-#'
+
+
+#' accident_2013.csv
+#' @format Dataset with 30,202 rows and 50 variables for year 2013.
+
+"accident_2013.csv"
+
+"accident_2013"
+
+## -----------------------------------------------------------------------------
+#' accident_2014.csv
+
+#' @format Dataset with 30,056 rows and 50 variables for year 2014.
+
+"accident_2014.csv"
+
+"accident_2014"
+
+## -----------------------------------------------------------------------------
+#' accident_2015.csv
+
+#' @format Dataset with 32,166 rows and 52 variables for year 2015.
+
+"accident_2015.csv"
+
+"accident_2015"

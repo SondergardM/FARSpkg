@@ -7,10 +7,11 @@
 fars_read_years(years)
 }
 \arguments{
-\item{years}{A vector of years.}
+\item{years}{A numeric vector of years.}
 }
 \value{
-A data set covering the indicated years, loaded into the R environment.
+A list, with each element containing the data for the indicated year(s),
+loaded into the R environment.
 }
 \description{
 This function reads in a vector of the years to be examined in the Fatality
@@ -19,6 +20,6 @@ specific year chosen is available.  If not, the function informs the user that
 the year is invalid. Ancillary function used by \code{fars_summarize_years}.
 }
 \examples{
-fars_read_years(2013, 2014, 2015)
+fars_read_years(c(2013, 2014, 2015))
 
 }
