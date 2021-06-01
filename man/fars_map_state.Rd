@@ -21,6 +21,11 @@ If the state_num parameter is invalid, the function shows an error.  Example
 data is only available for the years 2013 - 2015.
 }
 \examples{
-fars_map_state(28, 2013)
+\dontrun{
+setwd("data")
+year <- 2013
+state_num <- 28
+fars_map_state(state_num, year)
+}
 
 }

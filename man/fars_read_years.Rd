@@ -20,6 +20,8 @@ specific year chosen is available.  If not, the function informs the user that
 the year is invalid. Ancillary function used by \code{fars_summarize_years}.
 }
 \examples{
+\dontrun{
 fars_read_years(c(2013, 2014, 2015))
+}
 
 }

@@ -17,6 +17,8 @@ This function summarizes accident data, by year and month, for the years input
 by the user.
 }
 \examples{
+\dontrun{
 fars_summarize_years(c(2014, 2015))
+}
 
 }

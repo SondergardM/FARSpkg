@@ -19,6 +19,8 @@ and inserts into the name of a file that saves Fatality Analysis Reporting Syste
 (FARS) information.
 }
 \examples{
+\dontrun{
 make_filename(2015)
+}
 
 }

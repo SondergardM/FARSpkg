@@ -25,9 +25,7 @@ regarding fatal injuries suffered in motor vehicle traffic crashes.
 }
 \examples{
 \dontrun{
-df <- fars_read("accident_2013.csv.bz2")
-print(class(df))
-head(df)
+df <- fars_read(file.path("data", "accident_2013.csv.bz2"))
 }
 
 }

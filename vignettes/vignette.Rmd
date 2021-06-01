@@ -18,4 +18,28 @@ knitr::opts_chunk$set(
 library(FARSpkg)
 ```
 
-Write vignette
+The functions in this package are designed to utilize data from the US National
+Highway Traffic Safety Administration's Fatality Analysis Reporting System (FARS),
+which is a nationwide census that provides the American public with yearly data 
+concerning fatal injuries suffered in motor vehicle traffic crashes.
+
+Data is provided only for the years 2013, 2014 and 2015.
+
+The package consists of five (5) functions:
+
+* **make_filename**  This function takes an input year and returns a file name
+matching the FARS data files in the package.
+
+* **fars_read**  This function loads the FARS data for the specific years of interest.
+
+* **fars_read_years**  This function reads in the FARS data for a range of years 
+(2003 - 2015)
+
+* **fars_summarize_years**  This function produces a summary of the number of fatal
+traffic accidents per month for the specific year of interest.
+
+* **fars_map_state**  This function generates a map showing the location of fatal
+traffic accidents for a given state and year, as requested by the user.
+
+Further documentation can be found in the package documentation for each individual
+function.
