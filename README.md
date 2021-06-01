@@ -43,10 +43,9 @@ function.
 
 
 ## Notes:
-
-* Package has passed also
-[AppVeyor](https://ci.appveyor.com/project/EnriquePH/FARS) tests   
-
+<!-- badges: start -->
+  [![Travis build status](https://travis-ci.com/SondergardM/FARSpkg.svg?branch=main)](https://travis-ci.com/SondergardM/FARSpkg)
+  <!-- badges: end -->
 
 ## Useful Links:   
 * [Common `roxygen2` tags](https://bookdown.org/rdpeng/RProgDA/documentation.html#common-roxygen2-tags)
