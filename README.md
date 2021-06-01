@@ -46,7 +46,7 @@ function.
 
 * Package has passed also
 [AppVeyor](https://ci.appveyor.com/project/EnriquePH/FARS) tests   
-* Please, follow the links on Review Criteria.
+
 
 ## Useful Links:   
 * [Common `roxygen2` tags](https://bookdown.org/rdpeng/RProgDA/documentation.html#common-roxygen2-tags)
